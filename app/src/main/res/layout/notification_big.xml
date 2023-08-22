@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="5dp"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rl_header"
+        android:layout_height="60dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/img"
+            android:src="@drawable/flower"
+            android:contentDescription="@string/flower" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="title"
+            android:layout_toEndOf="@+id/img"
+            android:id="@+id/title"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_marginStart="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/message"
+            android:layout_below="@+id/title"
+            android:layout_toEndOf="@+id/img"
+            android:textColor="@color/black"
+            android:text="this is a message"
+            android:textSize="14sp"
+            android:layout_marginStart="10dp" />
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/big_image"
+        android:src="@drawable/flower"
+        android:contentDescription="@string/flower" />
+
+
+</LinearLayout>
